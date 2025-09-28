@@ -1,6 +1,39 @@
+'use client';
+
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { useState } from "react"
+import { api } from "@/lib/api"
+import { toast } from "sonner"
 
 export function Footer() {
+  const [email, setEmail] = useState('')
+  const [isSubscribing, setIsSubscribing] = useState(false)
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    if (!email) {
+      toast.error('Please enter your email address')
+      return
+    }
+
+    try {
+      setIsSubscribing(true)
+      await api.subscribeToNewsletter(email)
+      toast.success('Subscribed successfully!', {
+        description: 'Thank you for subscribing to our newsletter.'
+      })
+      setEmail('')
+    } catch (error) {
+      console.error('Subscription error:', error)
+      toast.error('Subscription failed', {
+        description: error instanceof Error ? error.message : 'Please try again later.'
+      })
+    } finally {
+      setIsSubscribing(false)
+    }
+  }
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
@@ -48,22 +81,31 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Newsletter</h3>
             <p className="text-primary-foreground/90 text-sm mb-4">
-              Stay updated with our latest insights and solutions.
+              Subscribe to our newsletter for the latest updates.
             </p>
-            <div className="flex flex-col sm:flex-row gap-2 w-full">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full px-3 py-2 text-sm bg-primary-foreground/10 border border-primary-foreground/20 rounded text-primary-foreground placeholder:text-primary-foreground/60"
-              />
-              <Button 
-                variant="secondary" 
-                size="sm" 
-                className="bg-accent text-accent-foreground hover:bg-accent/90 whitespace-nowrap"
-              >
-                Subscribe
-              </Button>
-            </div>
+            <form onSubmit={handleSubscribe} className="space-y-2">
+              <div className="flex space-x-2">
+                <Input 
+                  type="email" 
+                  placeholder="Your email" 
+                  className="bg-background/20 border-border text-foreground placeholder:text-foreground/70"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={isSubscribing}
+                  required
+                />
+                <Button 
+                  type="submit" 
+                  variant="secondary"
+                  disabled={isSubscribing}
+                >
+                  {isSubscribing ? 'Subscribing...' : 'Subscribe'}
+                </Button>
+              </div>
+              <p className="text-xs text-primary-foreground/70">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
+            </form>
           </div>
         </div>
 
