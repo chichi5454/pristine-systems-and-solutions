@@ -24,9 +24,9 @@ export function ServicesSection() {
               />
             </div>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-primary">Implementation</h3>
+              <h3 className="text-xl font-bold mb-3 text-primary">Microsoft Dynamics ERP</h3>
               <p className="text-muted-foreground mb-4">
-                Comprehensive system implementation services tailored to your business needs.
+                Comprehensive enterprise resource planning solution to streamline your business processes.
               </p>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" size="sm">
                 Learn More
@@ -44,9 +44,9 @@ export function ServicesSection() {
               />
             </div>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-primary">Development</h3>
+              <h3 className="text-xl font-bold mb-3 text-primary">Web Portals</h3>
               <p className="text-muted-foreground mb-4">
-                Custom software development solutions to drive your digital transformation.
+                Custom web portals for seamless interaction between your business and clients.
               </p>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" size="sm">
                 Learn More
@@ -64,9 +64,9 @@ export function ServicesSection() {
               />
             </div>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-primary">Project Management</h3>
+              <h3 className="text-xl font-bold mb-3 text-primary">Dynamics Business Intelligence</h3>
               <p className="text-muted-foreground mb-4">
-                Expert project management to ensure successful delivery of your initiatives.
+                Powerful analytics and reporting tools to drive data-driven decisions.
               </p>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" size="sm">
                 Learn More
@@ -86,9 +86,9 @@ export function ServicesSection() {
               />
             </div>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-primary">Training</h3>
+              <h3 className="text-xl font-bold mb-3 text-primary">Help-Desk System</h3>
               <p className="text-muted-foreground mb-4">
-                Comprehensive training programs to maximize your team's potential.
+                Comprehensive ticket management system for efficient issue resolution.
               </p>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" size="sm">
                 Learn More
@@ -106,9 +106,9 @@ export function ServicesSection() {
               />
             </div>
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-primary">Service Review</h3>
+              <h3 className="text-xl font-bold mb-3 text-primary">Mobile Applications</h3>
               <p className="text-muted-foreground mb-4">
-                Regular service reviews to ensure optimal performance and continuous improvement.
+                Custom mobile apps to keep your business connected on the go.
               </p>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" size="sm">
                 Learn More
