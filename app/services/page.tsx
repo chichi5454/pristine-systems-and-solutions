@@ -14,49 +14,49 @@ import {
 export default function ServicesPage() {
   const services = [
     {
-      title: "Web Development",
-      description: "Custom websites built with modern technologies to ensure fast, responsive, and scalable solutions.",
+      title: "Microsoft Dynamics ERP",
+      description: "Comprehensive enterprise resource planning solution to streamline your business processes.",
       icon: <Code2 className="w-7 h-7 text-[#696DCB]" />
     },
     {
-      title: "UI/UX Design",
-      description: "Beautiful and intuitive user interfaces designed to enhance user experience and drive engagement.",
+      title: "Web Portals",
+      description: "Custom web portals for seamless interaction between your business and clients.",
       icon: <Palette className="w-7 h-7 text-[#696DCB]" />
     },
     {
-      title: "Mobile Apps",
-      description: "Cross-platform mobile applications that work seamlessly on both iOS and Android devices.",
-      icon: <Smartphone className="w-7 h-7 text-[#696DCB]" />
-    },
-    {
-      title: "E-commerce Solutions",
-      description: "Complete online store setup with secure payment processing and inventory management.",
-      icon: <ShoppingCart className="w-7 h-7 text-[#696DCB]" />
-    },
-    {
-      title: "SEO Optimization",
-      description: "Improve your website's visibility and ranking on search engines to attract more visitors.",
-      icon: <Search className="w-7 h-7 text-[#696DCB]" />
-    },
-    {
-      title: "Maintenance & Support",
-      description: "Ongoing support and maintenance to keep your digital assets running smoothly.",
-      icon: <Wrench className="w-7 h-7 text-[#696DCB]" />
-    },
-    {
-      title: "Cloud Solutions",
-      description: "Migrate and manage your infrastructure on the cloud for enhanced scalability and security.",
-      icon: <Cloud className="w-7 h-7 text-[#696DCB]" />
-    },
-    {
-      title: "Data Analytics",
-      description: "Turn raw data into actionable insights with our advanced analytics solutions.",
+      title: "Dynamics Business Intelligence",
+      description: "Powerful analytics and reporting tools to drive data-driven decisions.",
       icon: <BarChart3 className="w-7 h-7 text-[#696DCB]" />
     },
     {
-      title: "Cybersecurity",
-      description: "Protect your business with cutting-edge cybersecurity measures and monitoring.",
-      icon: <ShieldCheck className="w-7 h-7 text-[#696DCB]" />
+      title: "Call Center Solutions",
+      description: "Efficient call center systems to enhance customer service and support.",
+      icon: <Smartphone className="w-7 h-7 text-[#696DCB]" />
+    },
+    {
+      title: "Mobile Applications",
+      description: "Custom mobile apps to keep your business connected on the go.",
+      icon: <Smartphone className="w-7 h-7 text-[#696DCB]" />
+    },
+    {
+      title: "Document Management",
+      description: "Electronic Document Management System for organized and secure document handling.",
+      icon: <Search className="w-7 h-7 text-[#696DCB]" />
+    },
+    {
+      title: "Help-Desk System",
+      description: "Comprehensive ticket management system for efficient issue resolution.",
+      icon: <Wrench className="w-7 h-7 text-[#696DCB]" />
+    },
+    {
+      title: "Central Database",
+      description: "Unified data storage solution for all your business needs.",
+      icon: <Cloud className="w-7 h-7 text-[#696DCB]" />
+    },
+    {
+      title: "Business Analytics",
+      description: "Advanced analytics to gain valuable business insights and drive growth.",
+      icon: <BarChart3 className="w-7 h-7 text-[#696DCB]" />
     }
   ]
 
@@ -67,11 +67,11 @@ export default function ServicesPage() {
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              Our Services
+              What We Offer
             </h1>
             <p className="text-lg md:text-xl text-gray-600">
               At <span className="font-semibold text-[#696DCB]">Pristine Systems and Solutions, Inc.</span>, 
-              we provide comprehensive digital services designed to accelerate your business transformation.
+              we provide comprehensive business solutions designed to transform your operations.
             </p>
           </div>
         </ScrollReveal>
@@ -96,9 +96,9 @@ export default function ServicesPage() {
         {/* Call to Action */}
         <ScrollReveal delay={0.3}>
           <div className="mt-20 text-center bg-gradient-to-r from-[#696DCB] to-[#4a4fc0] text-white py-12 rounded-2xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+            <h2 className="text-3xl font-bold mb-4">BENEFITS OF OUR SYSTEMS</h2>
             <p className="text-lg mb-6">
-              Let’s work together to bring your digital vision to life with innovative and reliable solutions.
+              Experience Increased productivity, improved user experience, and business growth with our tailored solutions.
             </p>
             <a
               href="/contact"
