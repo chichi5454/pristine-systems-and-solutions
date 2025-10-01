@@ -2,24 +2,29 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "What services does Pristine Systems and Solutions offer?",
+    question: "What types of enterprise solutions do you provide?",
     answer:
-      "We offer comprehensive digital transformation services including ERP implementation, custom software development, project management, training, service reviews, and managed support services specifically tailored for Philippine SMEs.",
+      "We offer Microsoft Dynamics ERP, web portals, business intelligence, call center solutions, mobile applications, document management, help-desk systems, central database, and business analytics to support organizations across sectors.",
   },
   {
-    question: "How long does a typical implementation project take?",
+    question: "Can your systems be customized for my organization?",
     answer:
-      "Project timelines vary depending on scope and complexity. A typical ERP implementation can range from 3-12 months, while custom development projects are scoped individually. We provide detailed project timelines during our initial consultation.",
+      "Yes, our solutions are highly customizable and can be tailored to meet the unique needs and processes of your organization, including personalization, modular growth, and flexible integration.",
   },
   {
-    question: "Do you provide ongoing support after implementation?",
+    question: "How do your solutions improve productivity and user experience?",
     answer:
-      "Yes, we offer comprehensive managed support services including 24/7 monitoring, regular maintenance, user support, and continuous optimization to ensure your systems perform at their best.",
+      "Our systems automate processes, streamline workflows, and provide intuitive interfaces, making it easier for users to learn new functions and work efficiently in familiar environments.",
   },
   {
-    question: "What makes Pristine Systems and Solutions different from other providers?",
+    question: "What support and training do you offer after implementation?",
     answer:
-      "Our deep expertise in Microsoft Dynamics, client-centric approach, proven track record with Philippine SMEs, and commitment to ethical and transparent practices set us apart. We focus on building long-term partnerships, not just completing projects.",
+      "We provide ongoing support, regular maintenance, user training, and continuous optimization to ensure your systems run smoothly and your team is fully equipped.",
+  },
+  {
+    question: "How do you ensure data security and reliability?",
+    answer:
+      "Our solutions feature central databases, auditing capabilities, open database connectivity, and enterprise-grade security to protect your data and ensure reliable performance.",
   },
 ]
 

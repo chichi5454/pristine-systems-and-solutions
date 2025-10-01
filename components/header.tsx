@@ -59,9 +59,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium">
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <Button className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium">
+              Get Started
+            </Button>
+          </Link>
           <button 
             className="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             onClick={() => setIsOpen(!isOpen)}

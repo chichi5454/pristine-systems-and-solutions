@@ -15,12 +15,14 @@ export function CTASection() {
               business with cutting-edge digital solutions designed specifically for Kenya's SMEs.
             </p>
               <div className="flex justify-center lg:justify-start mt-6">
-                <Button size="lg" variant="secondary" className="group bg-white hover:bg-white hover:text-[#696dcb] px-8 py-6">
-                  <span className="flex items-center text-[#696dcb]">
-                    Get Started Now
-                    <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                  </span>
-                </Button>
+                <a href="/contact">
+                  <Button size="lg" variant="secondary" className="group bg-white hover:bg-white hover:text-[#696dcb] px-8 py-6">
+                    <span className="flex items-center text-[#696dcb]">
+                      Get Started Now
+                      <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                    </span>
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

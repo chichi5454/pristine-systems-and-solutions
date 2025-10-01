@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useRef, useEffect } from "react"
@@ -97,17 +97,21 @@ export function HeroSection() {
         </p>
 
         <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            Get Started Today
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-primary-foreground text-black bg-primary-foreground "
-          >
-            Learn More
-          </Button>
+          <Link href="/quote">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              Get Started Today
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+          <a href="/services">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-primary-foreground text-black bg-primary-foreground "
+            >
+              Learn More
+            </Button>
+          </a>
         </div>
       </div>
     </section>

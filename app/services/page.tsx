@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/scroll-reveal"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 import { 
   Code2, 
   Palette, 
@@ -106,6 +107,121 @@ export default function ServicesPage() {
             >
               Get in Touch
             </a>
+          </div>
+        </ScrollReveal>
+
+        {/* Benefits and Features Section - Accordion */}
+        <ScrollReveal>
+          <div className="mt-12 max-w-4xl mx-auto bg-white shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Features & Benefits</h2>
+            <div className="mb-6">
+              <Accordion type="multiple" className="w-full">
+                <AccordionItem value="productivity">
+                  <AccordionTrigger>Increased Productivity</AccordionTrigger>
+                  <AccordionContent>Boosts efficiency and output across your organization.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="user-experience">
+                  <AccordionTrigger>Improved User Experience</AccordionTrigger>
+                  <AccordionContent>Software is easy to use, learn, and adapts to user needs.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="navision-benefit">
+                  <AccordionTrigger>Microsoft NAVISION Value</AccordionTrigger>
+                  <AccordionContent>Lets employees use business software easily, learn new functions quickly, and work in familiar ways.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="personalization">
+                  <AccordionTrigger>Personalization and Customization</AccordionTrigger>
+                  <AccordionContent>Tailor the system to your organization’s unique needs.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="event-management">
+                  <AccordionTrigger>Event Management with Notifications and Alerts</AccordionTrigger>
+                  <AccordionContent>Stay informed and respond quickly to important events.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="chart-of-accounts">
+                  <AccordionTrigger>Collapsible Chart of Accounts</AccordionTrigger>
+                  <AccordionContent>Organize and manage accounts efficiently.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="business-analytics">
+                  <AccordionTrigger>Business Analytics</AccordionTrigger>
+                  <AccordionContent>Gain insights and drive growth with advanced analytics.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="central-database">
+                  <AccordionTrigger>Central Database</AccordionTrigger>
+                  <AccordionContent>Unified data storage for all business needs.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="drill-down">
+                  <AccordionTrigger>Drill-Down Capability</AccordionTrigger>
+                  <AccordionContent>Analyze data at granular levels for better decision-making.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="xml-data">
+                  <AccordionTrigger>XML Data Transfer</AccordionTrigger>
+                  <AccordionContent>Seamlessly transfer data between systems.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="auditing">
+                  <AccordionTrigger>Auditing Capability</AccordionTrigger>
+                  <AccordionContent>Track changes and maintain compliance.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="business-growth">
+                  <AccordionTrigger>Business Growth</AccordionTrigger>
+                  <AccordionContent>Scalable solutions to support your organization’s expansion.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="scalability">
+                  <AccordionTrigger>Scalability</AccordionTrigger>
+                  <AccordionContent>Accommodate more users and larger data volumes (MS-SQL).</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="open-environment">
+                  <AccordionTrigger>Open Environment</AccordionTrigger>
+                  <AccordionContent>Flexible and adaptable to changing business needs.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="modular-growth">
+                  <AccordionTrigger>Modular Growth and Upgrades</AccordionTrigger>
+                  <AccordionContent>Easily add new modules and upgrade features.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="dependability">
+                  <AccordionTrigger>Dependability</AccordionTrigger>
+                  <AccordionContent>Reliable performance for mission-critical operations.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="flexibility">
+                  <AccordionTrigger>Flexibility to Change</AccordionTrigger>
+                  <AccordionContent>Adapt quickly to new requirements and market conditions.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="tailored-system">
+                  <AccordionTrigger>Tailored System</AccordionTrigger>
+                  <AccordionContent>Custom solutions for your specific business processes.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="open-db">
+                  <AccordionTrigger>Open Database Connectivity</AccordionTrigger>
+                  <AccordionContent>Integrate with other platforms and tools easily.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="integration">
+                  <AccordionTrigger>Integration</AccordionTrigger>
+                  <AccordionContent>Connect seamlessly with other business systems.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="tech-roadmap">
+                  <AccordionTrigger>Technology Road-Map</AccordionTrigger>
+                  <AccordionContent>Stay ahead with planned upgrades and innovations.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="competitiveness">
+                  <AccordionTrigger>Improved Competitiveness</AccordionTrigger>
+                  <AccordionContent>Enhance your market position with advanced tools.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="data-analysis">
+                  <AccordionTrigger>Data Analysis</AccordionTrigger>
+                  <AccordionContent>Analyze performance data and plan improvements.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="decision-support">
+                  <AccordionTrigger>Decision Support</AccordionTrigger>
+                  <AccordionContent>Make informed decisions with robust reporting.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="reporting">
+                  <AccordionTrigger>Reporting</AccordionTrigger>
+                  <AccordionContent>Generate detailed reports for all business areas.</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="self-service">
+                  <AccordionTrigger>Self Service Portals</AccordionTrigger>
+                  <AccordionContent>Empower users to access information and services independently.</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
           </div>
         </ScrollReveal>
       </div>

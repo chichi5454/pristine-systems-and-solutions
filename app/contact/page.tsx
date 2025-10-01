@@ -144,6 +144,15 @@ export default function ContactPage() {
                     Discover pricing options that align with your business size and goals.
                   </p>
                 </div>
+
+                {/* Added Contact Info Section */}
+                <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact & Support</h3>
+                  <p className="text-gray-600 mb-2">Feel free to talk to our online representative at any time you please using our Live Chat system on our website or one of the below instant messaging programs.</p>
+                  <p className="text-gray-600 mb-2">(24/7 Support!)</p>
+                  <p className="text-gray-600 mb-2">Phone General Inquiries: <br/>+254 20 4409583, <br/>+254 743 814321, <br/>+254 720 402260</p>
+                  <p className="text-gray-600 mb-2">Email: <a href="mailto:info@pristinesystems.ke" className="text-blue-600 underline">info@pristinesystems.ke</a></p>
+                </div>
               </div>
             </div>
 
