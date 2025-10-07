@@ -26,7 +26,8 @@ export default function QuoteForm() {
 		setSuccess("");
 		setError("");
 		try {
-			const res = await fetch("http://localhost:5000/api/quote", {
+			const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+			const res = await fetch(`${apiUrl}/quote`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(form),
@@ -44,7 +45,12 @@ export default function QuoteForm() {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto p-4">
+		<div className="space-y-6  p-4">
+			<div className="text-center space-y-2">
+				<h2 className="text-2xl font-bold">Request A Quote</h2>
+				<h5 className="text-gray-600 w-full">Ready to start your digital transformation journey? Get in touch with us today.</h5>
+			</div>
+			<form onSubmit={handleSubmit} className="bg-blue-50 p-4 rounded-lg space-y-4 max-w-md mx-auto">
 			<Input name="name" placeholder="Name" value={form.name} onChange={handleChange} required />
 			<Input name="email" type="email" placeholder="Email" value={form.email} onChange={handleChange} required />
 			<Input name="phone" type="tel" placeholder="Phone Number" value={form.phone} onChange={handleChange} />
@@ -54,6 +60,7 @@ export default function QuoteForm() {
 			{success && <p className="text-green-600">{success}</p>}
 			{error && <p className="text-red-600">{error}</p>}
 		</form>
+	</div>
 	);
 }
 // Quote form will be re-implemented here
